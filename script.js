@@ -168,7 +168,7 @@ function initScrollAnimations() {
 // --- Hero Counters ---
 function initCounters() {
   const counters = [
-    { elementId: 'stat-projects', target: 3, suffix: '+' },
+    { elementId: 'stat-projects', target: 4, suffix: '+' },
     { elementId: 'stat-hours', target: 120, suffix: '+' }
   ];
   
