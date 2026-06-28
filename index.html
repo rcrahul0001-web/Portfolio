@@ -14,6 +14,20 @@
 </head>
 <body data-theme="dark">
 
+  <!-- Global SVG Gradients for Charts -->
+  <svg style="width: 0; height: 0; position: absolute;" aria-hidden="true">
+    <defs>
+      <linearGradient id="bar-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="var(--accent-color)" />
+        <stop offset="100%" stop-color="rgba(6, 182, 212, 0.2)" />
+      </linearGradient>
+      <linearGradient id="bar-hover-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="var(--accent-secondary)" />
+        <stop offset="100%" stop-color="rgba(168, 85, 247, 0.2)" />
+      </linearGradient>
+    </defs>
+  </svg>
+
   <!-- Ambient Light Blobs -->
   <div class="ambient-blur ambient-1"></div>
   <div class="ambient-blur ambient-2"></div>
@@ -344,16 +358,6 @@
               
               <!-- Chart 2: Python Libraries (SVG Bar Chart) -->
               <svg class="svg-chart" id="chart-python" viewBox="0 0 400 300" style="display: none;">
-                <defs>
-                  <linearGradient id="bar-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="var(--accent-color)" />
-                    <stop offset="100%" stop-color="rgba(6, 182, 212, 0.2)" />
-                  </linearGradient>
-                  <linearGradient id="bar-hover-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="var(--accent-secondary)" />
-                    <stop offset="100%" stop-color="rgba(168, 85, 247, 0.2)" />
-                  </linearGradient>
-                </defs>
                 
                 <!-- Y Axis lines -->
                 <line x1="50" y1="20" x2="50" y2="250" stroke="var(--border-color)" />
@@ -531,6 +535,43 @@
               </div>
             </div>
           </article>
+
+          <!-- Project 4: Online Retail Sales -->
+          <article class="project-card slide-up" style="transition-delay: 0.3s;">
+            <div class="project-img-wrapper">
+              <img src="assets/project_retail_sales.png" alt="Online Retail Sales Dashboard Screenshot">
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Pandas</span>
+                <span class="project-tag">Streamlit</span>
+                <span class="project-tag">Plotly</span>
+              </div>
+              <h3 class="project-title">Online Retail Sales Dashboard</h3>
+              <p class="project-description">
+                Interactive BI dashboard analyzing £19.96M in revenue across 989,571 transactions from a UK-based e-commerce store. Covering Python-driven data auditing and cleaning to dynamic web deployment.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/rcrahul0001-web/Online-Retail-Shop-Analysis" target="_blank" rel="noopener" class="project-link">
+                  GitHub Repository
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <button class="project-btn-detail" data-project="retail-sales">
+                  Details
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -612,6 +653,25 @@
             <h3 class="cert-title">Data Labeling Job Simulation</h3>
             <span class="cert-org">Forage</span>
             <a href="https://www.theforage.com/completion-certificates/HgpPSsyQpzob6HEh9/Fnbjyox4Y4SciuEGF_HgpPSsyQpzob6HEh9_693f03e7678e25f55c953b0e_1779022916067_completion_certificate.pdf" target="_blank" rel="noopener" class="cert-link">
+              View Certificate
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card slide-up" style="transition-delay: 0.2s;">
+            <div class="cert-badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="cert-title">Getting Started in Google Analytics</h3>
+            <span class="cert-org">Google — Coursera</span>
+            <a href="https://www.coursera.org/account/accomplishments/verify/1HEZ3FTE64PU" target="_blank" rel="noopener" class="cert-link">
               View Certificate
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -866,6 +926,52 @@
         <ul class="modal-list">
           <li><strong>Operational Optimization</strong>: Identified specific region-product couples experiencing cancellation rates above 25%, guiding shipping and stock allocation changes.</li>
           <li><strong>Product Focus</strong>: Uncovered that despite lower sales volumes, B2B bulk orders generated double the AOV of standard B2C orders, highlighting a growth segment.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 4. Online Retail Sales Modal -->
+  <dialog class="project-modal" id="modal-retail-sales">
+    <div class="modal-header">
+      <h3 class="modal-title">Online Retail Sales Analysis</h3>
+      <button class="modal-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-metrics">
+        <div class="metric-card">
+          <span class="metric-num">£19.96M</span>
+          <span class="metric-label">Total Revenue</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">989K+</span>
+          <span class="metric-label">Transactions</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">5,860</span>
+          <span class="metric-label">Active Customers</span>
+        </div>
+      </div>
+      
+      <div class="modal-section">
+        <h4 class="modal-section-title">Project Overview</h4>
+        <p>An end-to-end business intelligence and data science project built on a massive real-world transactional dataset from a UK-based online retailer (December 2009 to December 2011). It features a clean Python cleaning pipeline and an interactive Streamlit dashboard.</p>
+      </div>
+      
+      <div class="modal-section">
+        <h4 class="modal-section-title">Implementation Steps</h4>
+        <ul class="modal-list">
+          <li><strong>Data Auditing & Cleaning</strong>: Built a Python pipeline (`data_audit.py`) managing missing customer identifiers, handling order cancellations (quantities &lt; 0), and parsing transaction timestamps.</li>
+          <li><strong>Exploratory Data Analysis</strong>: Designed statistical scripts (`eda.py`) analyzing monthly revenue trends, mid-week purchase concentration, and top-selling product categories.</li>
+          <li><strong>Interactive Dashboarding</strong>: Programmed a web interface using Streamlit and Plotly, exposing KPI cards, interactive product sales charts, customer segment splits, and global transaction maps.</li>
+        </ul>
+      </div>
+      
+      <div class="modal-section">
+        <h4 class="modal-section-title">Key Insights</h4>
+        <ul class="modal-list">
+          <li><strong>Temporal Distribution</strong>: Found that mid-week days (Tuesday to Thursday) consistently show the highest purchase volumes, enabling targeted ad placement and discount scheduling.</li>
+          <li><strong>Market Demographics</strong>: Confirmed that while the UK drives 90%+ of transactional volume, countries like Germany, France, and Eire represent key high-margin export markets.</li>
         </ul>
       </div>
     </div>
